@@ -131,6 +131,17 @@ textarea:focus {
 
 /* SOBRE MI */
 
+.title-about {
+    text-align:center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color:#d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
 .about {
     font-size: 1.5rem;
     padding: 1em;
@@ -142,7 +153,7 @@ textarea:focus {
 }
 
 /* SOBRE MI */
-#sobremi {
+#home {
     max-width: 900px;;
     margin: auto;
     padding: 100px 15px;
@@ -150,22 +161,22 @@ textarea:focus {
     display: flex;
 }
 
-#sobremi .contenedor-foto{
+#home .contenedor-foto{
     max-width: 400px;
     margin-right: 80px;
 }
 
-#sobremi .contenedor-foto img{
+#home .contenedor-foto img{
     padding: 20px;
     width: 100%;
     border-radius: 20px;
     background-color: #f3f3f3;
 }
 
-#sobremi .sobremi {
+#home .home {
     margin: 0 40px;
 }
-#sobremi .sobremi .titulo-seccion {
+#home .home .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
     color: O#111135;
@@ -174,33 +185,26 @@ textarea:focus {
     text-decoration-thickness: 5px;
 }
 
-#sobremi .sobremi h2{
+#home .home h2{
     font-size: 34;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
 }
 
-#sobremi .sobremi h2 span{
+#home .home h2 span{
     color: #ff5080;
 }
 
-#sobremi .sobremi h3{
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
 
-#sobremi .sobremi p{
+#home .home p{
     font-size: 14px;
     line-height: 25px;
-    color: O#565656;
+    color: black;
     margin-bottom: 12px 12px
 }
 
-#sobremi .sobremi a {
+#home .home a {
     display: inline-block;
     text-decoration: none;
     color: #000;
@@ -211,16 +215,34 @@ textarea:focus {
     transition: .5s;
 }
 
-#sobremi .sobremi a:hover{
+#home .home a:hover{
     background-color: #ff5080;
 }
 
+#home .home .logo{
+    display: flex;
+}
+#about .container-img {
+    display: flex;
+    justify-content: center;
+}
+
+#about .logo img{
+    justify-content:space-between;
+    margin: 60px;
+    padding: 1rem;
+    justify-content: center;
+}
 
 /* Skills*/
 
 .skills {
     text-align: center;
+    text-decoration: underline;
+    text-decoration-color:#d3d3d3;
+    text-decoration-thickness: 5px;
 }
+
 
 .title-skills {
     margin-bottom: 1rem;
@@ -252,65 +274,42 @@ textarea:focus {
     margin: auto;
 }
 
-#mis-proyectos .titulo-seccion{
-    text-align: center;
+#mis-proyectos .titulo-proyecto{
+    text-align:center;
     font-size: 22px;
     text-transform: uppercase;
     color: #000;
+    text-decoration: none;
     text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 6px;
-
+    text-decoration-color:#d3d3d3;
+    text-decoration-thickness: 5px;
 }
 
-#mis-proyectos .fila{
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
-}
 
-#mis-proyectos .proyecto{
-    margin: 0 10px;
+#mis-proyectos .e-commerce{
     border: 1px solid #000;
     position: relative;
     max-width: 450px;
     overflow: hidden;
+    justify-content:space-between;
+    margin: 30px;
+    display: inline-block;
 }
 
-/* Contacto*/
 
-.contact {
-    padding: 1rem;
-    max-width: 600px;
-    margin: auto;
-}
-
-.contact h2 {
-    margin-bottom: 1rem;
-}
-
-.contact form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-form .submit {
-    background-color: var(--color-primary);
-    border: none;
-    padding: 1rem;
-    border-radius: 0.2rem;
-    color: #fff;
-    font-weight: 700;
+#mis-proyectos .e-commerce img{
     width: 100%;
-    cursor: pointer;
-    transition: background-color 0.5s;
+    height: 50%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 1s;
+    display: flex;
+   justify-content: space-between;
 }
 
-form .submit:hover {
-    background-color: var(--color-focus);
+#mis-proyectos .e-commerce:hover img{
+    filter: grayscale(0);
 }
-
 
 
 /* CONTACTO */
@@ -323,7 +322,9 @@ form .submit:hover {
     margin-bottom: 20px;
     text-align: center;
     margin-bottom: 20px;
-
+    text-decoration: underline;
+    text-decoration-color:#d3d3d3;
+    text-decoration-thickness: 5px;
 }
 
 #contact .container-form{
@@ -365,6 +366,7 @@ form .submit:hover {
     transition: 1s;
     padding: 10px 15px;
     font-weight: bold;
+    border: 2px solid #131212;
 }
 
 #contact .btn-enviar:hover{
