@@ -30,6 +30,48 @@ a {
     font-weight: 700;
 }
  
+body {overflow-x: hidden;
+
+}
+
+/* NAVBAR */
+.contenedor-header{
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #ff5080;
+}
+
 
 input,
 textarea {
@@ -87,6 +129,8 @@ textarea:focus {
     color: var(--color-primary);
 }
 
+/* SOBRE MI */
+
 .about {
     font-size: 1.5rem;
     padding: 1em;
@@ -95,111 +139,6 @@ textarea:focus {
 
 .about p {
     margin: 1rem 0;
-}
-
-.skills {
-    text-align: center;
-}
-
-.title-skills {
-    margin-bottom: 1rem;
-}
-
-.skills i {
-    color: var(--color-primary);
-    font-size: 5rem;
-    cursor: pointer;
-    padding: 1rem;
-    transition: background-color 0.5s, color 0.5s, transform 0.5s;
-    border-radius: 100%;
-}
-
-.skills i:hover {
-    background-color: var(--color-primary);
-    color: #fff;
-}
-
-.skills i:active {
-    transform: scale(0.9);
-}
-
-.contact {
-    padding: 1rem;
-    max-width: 600px;
-    margin: auto;
-}
-
-.contact h2 {
-    margin-bottom: 1rem;
-}
-
-.contact form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-form .submit {
-    background-color: var(--color-primary);
-    border: none;
-    padding: 1rem;
-    border-radius: 0.2rem;
-    color: #fff;
-    font-weight: 700;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.5s;
-}
-
-form .submit:hover {
-    background-color: var(--color-focus);
-}
-
-footer {
-    height: 50px;
-    background-color: var(--color-primary);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* NAVBAR */
-.contenedor-header{
-    background: rgba(0, 0, 0, .8);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-.contenedor-header header{
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
-}
-.contenedor-header header .logo a{
-    font-family: 'Righteous';
-    font-size: 36px;
-    text-decoration: none;
-}
-.contenedor-header header ul{
-    display: flex;
-    list-style: none;
-}
-.contenedor-header header nav ul li a{
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
-}
-.contenedor-header header nav ul li a:hover{
-    color: #ff5080;
 }
 
 /* SOBRE MI */
@@ -276,6 +215,104 @@ footer {
     background-color: #ff5080;
 }
 
+
+/* Skills*/
+
+.skills {
+    text-align: center;
+}
+
+.title-skills {
+    margin-bottom: 1rem;
+}
+
+.skills i {
+    color: var(--color-primary);
+    font-size: 5rem;
+    cursor: pointer;
+    padding: 1rem;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+    border-radius: 100%;
+}
+
+.skills i:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.skills i:active {
+    transform: scale(0.9);
+}
+
+/* Mis Proyectos*/
+
+#mis-proyectos {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+#mis-proyectos .titulo-seccion{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 6px;
+
+}
+
+#mis-proyectos .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#mis-proyectos .proyecto{
+    margin: 0 10px;
+    border: 1px solid #000;
+    position: relative;
+    max-width: 450px;
+    overflow: hidden;
+}
+
+/* Contacto*/
+
+.contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+form .submit {
+    background-color: var(--color-primary);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+form .submit:hover {
+    background-color: var(--color-focus);
+}
+
+
+
 /* CONTACTO */
 #contact {
     padding: 100px 20px;
@@ -335,6 +372,8 @@ footer {
 }
 
 
+
+
 /*  FOOTER  */
 .footer {
 display: flex;
@@ -345,3 +384,11 @@ height: 75px;
 width: 100vw;
 }
 
+footer {
+    height: 50px;
+    background-color: var(--color-primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
