@@ -9,6 +9,15 @@
   font-size: 16px;
 }
 
+/* @media (max-width: 600px) {
+  .clase{
+    display: none;
+  }
+}
+
+ */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -59,11 +68,11 @@ textarea:focus {
   top: 0;
   left: 0;
   z-index: 99;
+  height: 100px;
 }
 .contenedor-header header {
   max-width: 1100px;
   margin: auto;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
@@ -88,6 +97,7 @@ textarea:focus {
 .contenedor-header header nav ul li a:hover {
   color: #ff5080;
 }
+
 
 /* HOME */
 #home {
@@ -199,6 +209,12 @@ textarea:focus {
   transition: 1s;
   margin: 10px auto;
 }
+/* media (max-width: 600px) {
+  .container-img{
+    display:block;
+    justify-content: center;
+    align-items: center;
+  } */
 
 /* SKILLS*/
 
@@ -356,4 +372,104 @@ footer {
   color: #fff;
   text-align: center;
   padding: 30px 0;
+}
+
+
+@media (max-width: 600px) {
+
+  .container-img {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #mis-proyectos .e-commerce {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .icon__menu {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+#nav ul{
+  display: none;
+}
+
+}
+
+
+
+
+
+#menu {
+  position: fixed;
+  background-color: #00000030;
+  left: 0;
+  width: 100%;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+
+  transform: translateY(-200%);
+  transition: transform 0.5s;
+}
+
+#menu a {
+  color: var(--White);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+#menu a:hover {
+  color: #000;
+  background-color: var(--White);
+}
+
+#menu__show {
+  transform: translatseY(0);
+}
+
+.icon__menu {
+  cursor: pointer;
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.bg_position_images {
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.home {
+  background-image: url(./images/mobile/image-header.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.title {
+  color: var(--White);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+
+.arrow {
+  transition: transform 0.5s;
+}
+
+.arrow:hover {
+  transform: translateY(10px);
 }
