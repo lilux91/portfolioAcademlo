@@ -9,10 +9,6 @@
   font-size: 16px;
 }
 
-.showMenu{
-transform: translateX(0);
-}
-
 
 * {
   margin: 0;
@@ -400,6 +396,7 @@ footer {
   top: 100px;
   left: 0;
   transform: translateX(200%);
+  transition: transform 0.5s;
 }
 
 }
