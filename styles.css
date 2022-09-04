@@ -9,13 +9,9 @@
   font-size: 16px;
 }
 
-/* @media (max-width: 600px) {
-  .clase{
-    display: none;
-  }
+.showMenu{
+transform: translateX(0);
 }
-
- */
 
 
 * {
@@ -76,6 +72,7 @@ textarea:focus {
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
+  height: 100px;
 }
 .contenedor-header header .logo a {
   font-family: "Righteous";
@@ -375,7 +372,7 @@ footer {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
   .container-img {
     flex-direction: column;
@@ -387,7 +384,7 @@ footer {
     padding: 10px;
   }
 
-  .icon__menu {
+  #iconMenu {
     cursor: pointer;
     display: inline-block;
     font-size: 1.5rem;
@@ -395,7 +392,14 @@ footer {
   }
 
 #nav ul{
-  display: none;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  transform: translateX(200%);
 }
 
 }
