@@ -72,7 +72,7 @@ textarea:focus {
 }
 .contenedor-header header .logo a {
   font-family: "Righteous";
-  font-size: 36px;
+  font-size: 30px;
   text-decoration: none;
 }
 .contenedor-header header ul {
@@ -202,12 +202,7 @@ textarea:focus {
   transition: 1s;
   margin: 10px auto;
 }
-/* media (max-width: 600px) {
-  .container-img{
-    display:block;
-    justify-content: center;
-    align-items: center;
-  } */
+
 
 /* SKILLS*/
 
@@ -432,10 +427,6 @@ footer {
   background-color: var(--White);
 }
 
-/* #menu__show {
-  transform: translatseY(0);
-} */
-
 .icon__menu {
   cursor: pointer;
   display: none;
@@ -443,33 +434,11 @@ footer {
   color: #fff;
 }
 
-/* .bg_position_images {
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-} */
 
-/* .home {
-  background-image: url(./images/mobile/image-header.jpg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-} */
-
-/* .title {
-  color: var(--White);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 2rem;
-} */
-
-/* .arrow {
+.arrow {
   transition: transform 0.5s;
 }
 
 .arrow:hover {
   transform: translateY(10px);
-} */
+} 
