@@ -1,170 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LilianaAltamirano</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!--Iconohamburguesa-->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
 
-  <body>
-    <!-- NAVBAR -->
-    <div class="contenedor-header">
-      <header>
-        <div class="logo">
-          <a href="#">LA</a>
-        </div>
-        <nav id="nav">
-          <ul class="showMenu">
-            <li><a href="#home">INICIO</a></li>
-            <li><a href="#about">SOBRE MI</a></li>
-            <li><a href="#skills">HABILIDADES</a></li>
-            <li><a href="#mis-proyectos">MIS PROYECTOS</a></li>
-            <li><a href="#contact">CONTACTO</a></li>
-          </ul>
-          <span class="icon__menu" id="iconMenu">&#9776</span>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LilianaAltamirano</title>
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fontawesome.com/v4/icons/" rel="stylesheet" />
+  <!--Iconohamburguesa-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./dark.css"/>
+</head>
 
-        <!--HAMBURGUESA-->
-        <section class="home bg_position_images" id="home">
-      
-          <a class="arrow" href="#about">
-              <g stroke="#FFF" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M18 3v100M3 95.484l15 15 15-15" />
-              </g>
-            </svg>
-          </a>
-        </section>
-      </header>
+<body class="dark">
+  <!-- NAVBAR -->
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="#">LA</a>
+      </div>
+      <nav id="nav">
+        <ul class="showMenu">
+          <li><a href="#home">INICIO</a></li>
+          <li><a href="#about">SOBRE MI</a></li>
+          <li><a href="#skills">HABILIDADES</a></li>
+          <li><a href="#mis-proyectos">MIS PROYECTOS</a></li>
+          <li><a href="#contact">CONTACTO</a></li>
+
+          <!--Boton modo dark-->        
+          <button class="modedark" id="modedark">
+            <span><i class='bx bxs-sun'></i></span>
+            <span><i class='bx bx-moon'></i></span>
+        
+
+        </ul>
+        <span class="icon__menu" id="iconMenu">&#9776</span>
+      </nav>
+
+      <!--HAMBURGUESA-->
+      <section class="home bg_position_images" id="home">
+        <a class="arrow" href="#about">
+          <g stroke="#FFF" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M18 3v100M3 95.484l15 15 15-15" />
+          </g>
+          </svg>
+        </a>
+      </section>
+    </header>
+  </div>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="contenedor-foto">
+      <img src="assets/yo.jpeg" alt="fotopersonal" />
     </div>
-
-    <!-- HOME -->
-    <section id="home">
-      <div class="contenedor-foto">
-        <img src="assets/yo.jpeg" alt="fotopersonal" />
-      </div>
-      <div class="home">
-        <p class="titulo-seccion">HOME</p>
-        <h2>Hola, soy <span>Liliana Estela Altamirano</span></h2>
-        <h3>Desarrolladora Web Full Stack</h3>
-
-        <p>
-          <br />
-          <strong>Aspirante a Developer</strong>
-        </p>
-        <a href="#">Descargar CV</a>
-      </div>
-    </section>
-
-    <!-- SOBRE MI -->
-    <section id="about">
-      <h2 class="title-about">SOBRE MI</h2>
-      <p>
-        Actualmente estudiante de programación Web Full Stack en Academlo e
-        ingles en Sociedad Cultural Inglesa de Argentina.
-      </p>
-      <p>
-        Tengo conocimiento práctico de desarrollo back-end y front-end (HTML,
-        CSS, Javascript). Buena habilidad de comunicación, soy organizada, con
-        atención al detalle.<br />
-        Mi objetivo es tener experiencia demostrable en diseño y creación.
-        Acepto cualquier desafio, trabajando como parte de un equipo de
-        solucionadores de problemas, ayudando a resolver problemas comerciales
-        complejos desde la estrategia hasta la ejecución.
-      </p>
+    <div class="home">
+      <p class="titulo-seccion">HOME</p>
+      <h2>Hola, soy <span>Liliana Estela Altamirano</span></h2>
+      <h3>Front-end Developer</h3>
 
       <p>
-        Estudiante recibida en "Formación Pedagógica de Nivel Medio" en la
-        Facultad de Ciencias Humanas de la Universidad Del Este (La Plata) .<br />
-        En curso con la carrera "Tecnicatura Superior en Quimica" en la
-        Universidad Nacional General Sarmiento (UNGS).
+        <br />
+        <strong>Aspirante a Developer Web Full Stack</strong>
       </p>
-      <div class="container-img">
-        <img src="./assets/sobremi/ude.png" alt="UDE" />
-        <img src="./assets/sobremi/ungs.jpg" alt="UNGS" />
-        <img src="./assets/sobremi/academlo.png" alt="ACADEMLO" />
-      </div>
-    </section>
+      <a href="#">Descargar CV</a>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2 class="title-skills">MIS HABILIDADES</h2>
-      <i class="bx bxl-html5"></i>
-      <i class="bx bxl-css3"></i>
-      <i class="bx bxl-javascript"></i>
-    </section>
+  <!-- SOBRE MI -->
+  <section id="about">
+    <h2 class="title-about">SOBRE MI</h2>
+    <p>
+      Actualmente estudiante de programación Web Full Stack en Academlo e
+      ingles en Sociedad Cultural Inglesa de Argentina.
+    </p>
+    <p>
+      Tengo conocimiento práctico de desarrollo back-end y front-end (HTML,
+      CSS, Javascript, React.js). Buena habilidad de comunicación, soy organizada, con
+      atención al detalle.<br />
+      Mi objetivo es tener experiencia demostrable en diseño y creación.
+      Acepto cualquier desafio, trabajando como parte de un equipo de
+      solucionadores de problemas, ayudando a resolver problemas comerciales
+      complejos desde la estrategia hasta la ejecución.
+    </p>
 
-    <!-- MIS PROYECTOS -->
-    <section id="mis-proyectos">
-      <h3 class="titulo-proyecto">Mis Proyectos</h3>
-      <div class="e-commerce">
-        <img src="./assets/proyectos/1.jpeg" alt="Mi e-commerce1" />
-        <img src="./assets/proyectos/2.jpeg" alt="mi e-commerce2" />
-      </div>
-    </section>
+    <p>
+      Estudiante recibida en "Formación Pedagógica de Nivel Medio" en la
+      Facultad de Ciencias Humanas de la Universidad Del Este (La Plata) .<br />
+      En curso con la carrera "Tecnicatura Superior en Quimica" en la
+      Universidad Nacional General Sarmiento (UNGS).
+    </p>
+    <div class="container-img">
+      <img src="./assets/sobremi/ude.png" alt="UDE" />
+      <img src="./assets/sobremi/ungs.jpg" alt="UNGS" />
+      <img src="./assets/sobremi/academlo.png" alt="ACADEMLO" />
+    </div>
+  </section>
 
-    <!-- CONTACTO -->
-    <section id="contact">
-      <h4 class="titulo-section">Contactame</h4>
-      <div class="container-form">
-        <form action="">
-          <div class="fila mitad">
-            <input
-              type="text"
-              placeholder="Nombre y Apellido"
-              class="input-mitad"
-            />
-            <input type="text" placeholder="email" class="input-mitad" />
-          </div>
-          <div class="fila">
-            <input type="text" placeholder="Asunto" class="input-full" />
-          </div>
-          <div class="fila">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Mensaje.."
-              class="input-full"
-            ></textarea>
-          </div>
-          <input type="submit" value="Enviar mensaje" class="btn-enviar" />
-        </form>
-      </div>
-    </section>
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="title-skills">MIS HABILIDADES</h2>
+    <i class="bx bxl-html5"></i>
+    <i class="bx bxl-css3"></i>
+    <i class="bx bxl-javascript"></i>
+    <i class='bx bxl-react'></i>
+    <i class='bx bxl-git'></i>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p>Todos los derechos reservados - 2022</p>
-      <div class="footer-content">
-        <h5>Liliana Altamirano</h5>
-        <h5>Jr. Developer</h5>
-      </div>
-      <div class="social-network">
-        <a
-          href="https://www.linkedin.com/in/liliana-altamirano-77b4561ab/"
-          target="_blank"
-          ><i class="bx bxl-linkedin-square"></i
-        ></a>
-        <a href="https://twitter.com/AltamiranoLilii" target="_blank"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a href="https://github.com/lilux91/portfolio" target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
-      </div>
-    </footer>
 
-    <script src="./main.js"></script>
-  </body>
+  <!-- MIS PROYECTOS -->
+  <section id="mis-proyectos">
+    <h3 class="titulo-proyecto">Mis Proyectos</h3>
+    <br/>
+    <div class="e-commerce">
+      <img src="./assets/proyectos/1.jpeg" alt="Mi e-commerce1" />
+      <img src="./assets/proyectos/2.jpeg" alt="mi e-commerce2" />
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact">
+    <h4 class="titulo-section">Contactame</h4>
+    <div class="container-form">
+      <form action="">
+        <div class="fila mitad">
+          <input type="text" placeholder="Nombre y Apellido" class="input-mitad" />
+          <input type="text" placeholder="email" class="input-mitad" />
+        </div>
+        <div class="fila">
+          <input type="text" placeholder="Asunto" class="input-full" />
+        </div>
+        <div class="fila">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje.." class="input-full"></textarea>
+        </div>
+        <input type="submit" value="Enviar mensaje" class="btn-enviar" />
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Todos los derechos reservados - 2022</p>
+    <div class="footer-content">
+      <h5>Liliana Altamirano</h5>
+      <h5>Jr. Front-end Developer</h5>
+    </div>
+    <div class="social-network">
+      <a href="https://www.linkedin.com/in/liliana-altamirano-77b4561ab/" target="_blank"><i
+          class="bx bxl-linkedin-square"></i></a>
+      <a href="https://twitter.com/AltamiranoLilii" target="_blank"><i class="bx bxl-twitter"></i></a>
+      <a href="https://github.com/lilux91/portfolio" target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="https://linktr.ee/lilualtamirano" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+  <script src="./maindark.js"></script>
+</body>
 
 </html>

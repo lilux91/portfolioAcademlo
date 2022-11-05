@@ -1,4 +1,3 @@
-
 const iconMenu=document.querySelector("#iconMenu")
 const ulMenu=document.querySelector("#nav ul")
 let menuabierto=false

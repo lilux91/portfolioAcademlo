@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600&display=swap');
+
+:root{
+    --color-title: #F0FF42;
+    --color-primary: #F94892;
+    --color-secundary: #8D72E1;
+}
+
+#dark{
+    width: 30px;
+    font-size: 100px;
+    margin: auto;
+    cursor: pointer;
+}
+.dark{
+    background: rgb(17, 17, 17);
+    
+}
+
+
+/*Home*/
+.dark #home .titulo-seccion {
+    color: var(--color-title)
+}
+
+.dark .home h2{
+    color: white;
+}
+
+.dark #home .home h2 span{
+    color: var(--color-primary);
+}
+
+.dark p{
+    color: rgb(209, 208, 208);
+}
+
+.dark #home{
+    color: var(--color-secundary);
+}
+
+.dark #home .home p strong{
+    color: white;
+}
+
+/*Descarga*/
+.dark #home .home a{
+    color: var(--color-secundary);
+}
+
+
+/*Button*/
+.dark #modedark{
+    color: #FF6D28;
+    border-radius: 10px;
+}
+
+
+/*About me*/
+.dark #about .title-about {
+    color: var(--color-title);
+}
+
+
+/*Skills*/
+.dark #skills .title-skills {
+    color: var(--color-title);
+}
+
+/*Mis proyectos*/
+.dark #mis-proyectos .titulo-proyecto{
+    color: var(--color-title);
+}
+
+
+/*Contact me*/
+.dark #contact .titulo-section {
+    color: var(--color-title);
+}
+
+.dark #contact .btn-enviar:hover {
+    color: white;
+}
